@@ -26,7 +26,13 @@ response = requests.request("GET", url, headers=headers, params=querystring)
 res = []
 data = response.json()
 for p in data['results']:
-    res.append(p)
+    res.append(p['title'])
+    res.append(p['sysconcepts'])
+    res.append(p['propertyz32xurlz32xtitle'])
+    res.append(p['relatedez120xpertsfullnamecomputed'])
+    res.append(p['managedz32xbyz32xemail'])
+    
+
 
 
 df = pandas.json_normalize(res)
