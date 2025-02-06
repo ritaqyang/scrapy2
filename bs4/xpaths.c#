@@ -1,0 +1,38 @@
+Link"https://app.icatalog.cn/web/usermngt/user/tologin?account=true"
+
+Username box
+//input[@id='identity']
+
+password box
+//input[@id='password']
+
+login button
+//a[@id='btnLogin']
+
+all button 
+//a[contains(., 'All')]
+
+page size box
+//input[@id='pageSize']
+
+page number button
+//ul[@class='pagination']/li[contains(., '1')]/a
+
+Row item 
+//tbody[@class='product']
+
+cateNo text / product code
+//tbody[@class='product']//span[contains(@class, 'pd-cateNo')]
+
+Category
+//tbody[@class='product']//span[contains(@class, 'pd-category')]
+
+Description
+//tbody[@class='product']//span[contains(@class, 'pd-name')]
+
+Amount / size
+//tbody[@class='product']//span[contains(@class, 'spec-name')]
+
+Image
+//tbody[@class='product']//img[contains(@class, 'pd-img')]
+
